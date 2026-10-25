@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+ifrom flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -7,8 +7,10 @@ def home():
     return jsonify({
         "application": "Flask DevOps Automation",
         "status": "running",
-        "message": "Deployed through Jenkins and Docker"
+        "message": "Deployed through Jenkins and Docker and added webhook triggers"
     })
+
+
 
 @app.route("/health")
 def health():
